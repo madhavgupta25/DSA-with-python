@@ -13,3 +13,6 @@ def series_of_prime_number(n : int) -> list[int] :
     return ans
 n = int(input("Enter the number: "))
 print(series_of_prime_number(n))
+
+i
+k
