@@ -4,7 +4,7 @@ def fact(n:int)->int:
         return 1
     
     
-    #recurrsive case
+    #recursive case
     a = fact(n-1)
     return n*a
     

@@ -1,0 +1,9 @@
+def f(n:int)->None:
+    #base case
+    if n == 0:
+        return "0"
+    # recursive call
+    
+
+n = int(input())
+print(f(n))
