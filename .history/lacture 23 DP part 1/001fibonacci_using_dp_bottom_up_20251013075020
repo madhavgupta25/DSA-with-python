@@ -1,0 +1,4 @@
+# it is bottom up approach of dp and it is also known as iterative and in this we use dp
+
+n = int(input)
+f_bottom_up(n)

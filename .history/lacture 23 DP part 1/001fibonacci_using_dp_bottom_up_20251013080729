@@ -1,0 +1,14 @@
+# it is bottom up approach of dp and it is also known as iterative and in this we use dp
+
+def f_bottom_up(n:int)->int:
+    dp = [None]*(n+1)
+    dp[0] = 0
+    dp[1] = 1
+    
+    for i in range(2,n+1):
+        dp[i]=dp[i-1]+dp[i-2]
+    
+    return dp[n]
+
+n = int(input().strip())
+print(f_bottom_up(n))

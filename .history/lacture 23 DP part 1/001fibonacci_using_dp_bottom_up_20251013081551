@@ -1,0 +1,29 @@
+# it is bottom up approach of dp and it is also known as iterative and in this we use dp
+# space = O(n)
+# time = O(n) due to dp[] 
+
+def f_bottom_up(n:int)->int:
+    dp = [None]*(n+1)
+    dp[0] = 0
+    dp[1] = 1
+    
+    for i in range(2,n+1):
+        dp[i]=dp[i-1]+dp[i-2]
+    
+    return dp[n]
+
+def f_bottom_up_space_optimized_solution(n:int)->int:
+    a = 0 # 0th fibo num
+    b = 1 # 1th fibo num
+    i = 1
+    
+    while i<=n+1:
+        c = a+b
+        a = b
+        b = c
+        i+=1
+        
+    return c 
+n = int(input().strip())
+print(f_bottom_up(n))
+print(f_bottom_up_space_optimized_solution(n))
