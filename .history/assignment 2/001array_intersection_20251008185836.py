@@ -1,8 +1,8 @@
 def array_intersection(arr1:list[int],arr2:list[int])->list[int]:
     intersection = []
     for i in arr1:
-        # if i in arr2 and i in intersection:
-        #     intersection.append(i) 
+        if i in arr2 and i in intersection:
+            intersection.append(i) 
         if i in arr2:
             intersection.append(i) 
     

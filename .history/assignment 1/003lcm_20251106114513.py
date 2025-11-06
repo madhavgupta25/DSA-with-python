@@ -10,3 +10,4 @@ n1 = int(input().strip())
 n2 = int(input().strip())
 
 print(lcm(n1 , n2))
+print(5)

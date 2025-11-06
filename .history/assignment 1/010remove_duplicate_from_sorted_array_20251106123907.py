@@ -1,7 +1,7 @@
 
 n = int(input("Enter the size of array : ").strip())
 arr = list(map(int, input().split()))
-# arr = list(map(int,input().split()))
+arr= list(map(int,input.sp))
 
 result=[]
 for i in range(n):
