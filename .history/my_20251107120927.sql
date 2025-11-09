@@ -1,0 +1,41 @@
+CREATE TABLE STUDENT (
+  Student_ID INT PRIMARY KEY,
+  Name VARCHAR(50),
+  Department VARCHAR(50),
+  Email VARCHAR(100),
+  Phone VARCHAR(15)
+);
+
+CREATE TABLE FACULTY (
+  Faculty_ID INT PRIMARY KEY,
+  Name VARCHAR(50),
+  Department VARCHAR(50),
+  Email VARCHAR(100)
+);
+
+CREATE TABLE COURSE (
+  Course_ID VARCHAR(10) PRIMARY KEY,
+  Course_Name VARCHAR(100),
+  Credits INT,
+  Faculty_ID INT,
+  FOREIGN KEY (Faculty_ID) REFERENCES FACULTY(Faculty_ID)
+);
+
+CREATE TABLE ENROLLMENT (
+  Student_ID INT,
+  Course_ID VARCHAR(10),
+  Marks DECIMAL(5,2),
+  Grade CHAR(2),
+  PRIMARY KEY (Student_ID, Course_ID),
+  FOREIGN KEY (Student_ID) REFERENCES STUDENT(Student_ID),
+  FOREIGN KEY (Course_ID) REFERENCES COURSE(Course_ID)
+);
+
+CREATE TABLE ATTENDANCE (
+  Student_ID INT,
+  Course_ID VARCHAR(10),
+  Date DATE,
+  Status VARCHAR(10),
+  FOREIGN KEY (Student_ID) REFERENCES STUDENT(Student_ID),
+  FOREIGN KEY (Course_ID) REFERENCES COURSE(Course_ID)
+);

@@ -8,6 +8,6 @@ for num in arr:
         zeros+=1
         
 sorted_array = [0] * zeros + [1] *(n-zeros)
-print(type(sorted_array))
+print datatype(sorted_array)
 print (*sorted_array) 
     
