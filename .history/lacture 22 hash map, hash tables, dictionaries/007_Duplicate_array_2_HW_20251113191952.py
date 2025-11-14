@@ -1,0 +1,9 @@
+
+def duplicate_found_near(arr:list[int],k:int)->bool:
+    for i in range(len(arr))
+    
+
+
+arr = list(map(int,input().split()))
+k = int(input())
+print(duplicate_found_near(arr,k))

@@ -1,0 +1,1 @@
+k , n = int(input)

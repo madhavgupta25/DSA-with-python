@@ -1,0 +1,1 @@
+k , n = listint(input)

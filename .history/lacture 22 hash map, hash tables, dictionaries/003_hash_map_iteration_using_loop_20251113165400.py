@@ -1,0 +1,9 @@
+# iterate dictionary
+capital_map = {
+    "India": "New Delhi",
+    "USA": "Washington, D.C.",
+    "France": "Paris",
+    "Germany": "Berlin",
+    "Japan": "Tokyo", 
+    "Australia": "Canberra"
+}

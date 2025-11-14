@@ -1,0 +1,3 @@
+# approach1: 
+# step1:sort the array
+# step2: scan the array
